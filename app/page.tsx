@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { use } from "react";
 
 // Creating and nesting components    : t01
 
@@ -66,7 +67,7 @@ export default function Home() {
 
 
 // Adding styles      : t03
-
+/*
 import MyButton from "./components/MyButton";
 import AboutPage from "./components/AboutPage";
 
@@ -77,3 +78,79 @@ export default function Home() {
     </div>
   );
 }
+*/
+
+
+
+
+
+
+
+
+// Displaying Data       : t04
+
+/*
+const user = {
+  name: 'Hedy Lamarr',
+  imageURL: 'https://i.imgur.com/yXOvdOSs.jpg',
+  imageSize: 90
+}
+
+export default function Profile() {
+  return (
+    <>
+      <h1>{user.name}</h1>
+      <img 
+        src={user.imageURL} 
+        alt={user.name} 
+        style={{
+          width: user.imageSize,
+          height: user.imageSize
+        }}
+      />
+    </>
+  )
+}
+*/
+
+
+
+
+
+
+
+// Conditional Rendering       : t05
+
+/* 
+let content;
+if (isLoggedIn) {
+  content = <AdminPanel />;
+} else {
+  content = <LoginForm />;
+}
+return (
+  <div>
+    {content}
+  </div>
+);
+ */
+
+
+/*
+<div>
+  {isLoggedIn ? (
+    <AdminPanel />
+  ) : (
+    <LoginForm />
+  )}
+</div>
+*/
+
+
+
+
+/*
+<div>
+  {isLoggedIn && <AdminPanel />}
+</div>
+*/
