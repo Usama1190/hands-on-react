@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>     condition with ternary operator ? :
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+
+    <script>
+        function renderApp() {
+            document.getElementById("demo").innerHTML = "Welcome!";
+        }
+
+        function renderLogin() {
+            document.getElementById("demo").innerHTML = "Please log in";
+        }
+
+        let authenticated = true;
+
+        authenticated ? renderApp() : renderLogin();
+    </script>
+
+    <p>Try changing the "authenticated" variable to false, and run the code to 
+        see what happens.
+    </p>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>      condition with if else
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+
+    <script type="module">
+        function renderApp() {
+            document.getElementById("demo").innerHTML = "Welcome!";
+        }
+
+        function renderLogin() {
+            document.getElementById("demo").innerHTML = "Please Log in";
+        }
+
+        let authenticated = true;
+
+        if(authenticated) {
+            renderApp();
+        }
+        else{
+            renderLogin();
+        }
+    </script>
+
+    <p>Try changing the "authenticated" variable to false, and run the code to 
+        see what happens.
+    </p>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>     export and import
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script type="module">
+        import { name, age } from './person.js';
+
+        document.getElementById("demo").innerHTML = "My name is " + name;
+        document.getElementById("demo").innerHTML += ", I am " + age + ".";
+    </script>
+
+    <script type="module">
+        import message from './message.js'
+
+        document.getElementById("demo").innerHTML = message();
+    </script>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>     destructuring objects
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var myVehicle = {
+            brand: "Ford",
+            model: "Mustang",
+            color: "red"
+        }
+
+        var updateMyVechicle = {
+            type: "car",
+            year: 2021,
+            color: "yellow"
+        }
+
+        var myObj = {...myVehicle, ...updateMyVechicle};
+
+        // Check the result object in the console
+        console.log(myObj);
+    </script>
+
+    <p>Press F12 and see the result object in the console view.</p>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>     spread operator with destructuring
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const numbers = [1, 2, 3, 4, 5, 6];
+
+        const [one, two, ...rest] = numbers;
+
+        document.write("<p>"+ one + "</p>");
+        document.write("<p>"+ two + "</p>");
+        document.write("<p>"+ rest + "</p>");
+    </script>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>    spread operator
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Spread Operator</h1>
+
+    <script>
+        const numberOne = [1, 2, 3];
+        const numberTwo = [4, 5, 6];
+
+        const numnersCombined = [...numberOne, ...numberTwo];
+
+        document.write(numnersCombined);
+    </script>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>     destructuring nested object
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+        var vehicleOne = {
+            brand: "Ford",
+            model: "Mustang",
+            type: "car",
+            year: 2021,
+            color: "red",
+            registration: {
+                city: "Houston",
+                state: "Taxes",
+                country:"USA"
+            }
+        }
+
+        myVehicle(vehicleOne);
+
+        function myVehicle({model, registration: { state }}) {
+            var message = "My " + model + " is registered in " + state;
+
+            document.getElementById("demo").innerHTML = message;
+        }
+    </script>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>     destructring Object
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+        const vehicleOne = {
+            brand: "Ford",
+            model: "Mustang",
+            type: "car",
+            year: 2021,
+            color: "red",
+        }
+
+        myVehicle(vehicleOne);
+
+        function myVehicle({type, color, brand, model}) {
+            const message = "My " + type + " is a " + color + " " + brand + 
+            " " + model;
+
+            document.getElementById("demo").innerHTML = message;
+        }
+    </script>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>     Array Function
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Calculate(a, b) {
+            const add = a + b;
+            const subtract = a - b;
+            const multiply = a * b;
+            const divide = a / b;
+
+            return [add, subtract, multiply, divide]
+        }
+
+        const [add, subtract, multiply, divide] = Calculate(4, 7);
+
+        document.write("<p>Sum: " + add + "</p>");
+        document.write("<p>Difference " + subtract + "</p>");
+        document.write("<p>Product: " + multiply + "</p>");
+        document.write("<p>Quotient " + divide + "</p>");
+    </script>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>     arrow function window object
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Arrow Function</h2>
+    <p>The <strong>this</strong> keyword represents the Header object.</p>
+
+    <button id="btn">Click Me!</button>
+
+    <p><strong>this</strong> represents:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        class Header {
+            constructor() {
+                this.color = "Red";
+            }
+
+            changeColor = () => document.getElementById("demo").innerHTML += this;
+        }
+
+        const myheader = new Header();
+
+        window.addEventListener("load", myheader.changeColor);
+
+        document.getElementById("btn").addEventListener("click", myheader.changeColor);
+    </script>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>     regular function window object
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Regular Function</h2>
+    <p>The <strong>this</strong> keyword represents different objects depending 
+    on how the function was called</p>
+
+    <button id="btn">Click Me!</button>
+
+    <p><strong>this</strong> represents:</p>
+
+    <p id="demo"></p>
+
+    <p>See the difference before and after the button is clicked.</p>
+
+    <script>
+        class Header {
+            constructor() {
+                this.color = "Red";
+            }
+
+            changeColor = function() {
+                document.getElementById("demo").innerHTML += this;
+            }
+        }
+
+        const myheader = new Header();
+
+        // The window object calls the function
+        window.addEventListener("load", myheader.changeColor);
+
+        // A button object calls the function
+        document.getElementById("btn").addEventListener("click", 
+        myheader.changeColor);
+    </script>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>     arrow function without parentheses
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arrow Function</h1>
+
+    <p>As you can see in this example, you can skip the parentheses when you 
+        have only one parameter.
+    </p>
+
+    <p id="demo"></p>
+
+    <script>
+        hello = val => "Hello " + val;
+
+        document.getElementById("demo").innerHTML = hello("World");
+    </script>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>     arrow function with parameter 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arrow Function</h1>
+
+    <p>A demonstration of a arrow function in one line, with parameters.</p>
+  
+    <p id="demo"></p>
+    
+    <script>
+        hello = (val) => "Hello " + val;
+
+        document.getElementById("demo").innerHTML = hello("World");
+    </script>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>     arrow function without return keyword
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arrow Function</h1>
+    <h2>Implicit Retrun</h2>
+
+    <p>The arrow function expects a return value, and returns the value by 
+        default, without the <strong>return</strong> keyword.
+    </p>
+
+    <p id="demo"></p>
+
+    <script>
+        hello = () => "Hello World!";
+
+        document.getElementById("demo").innerHTML = hello();
+    </script>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>     simple arrow function
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arrow Function</h1>
+    <p>A demonstration of a simple arrow function.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        hello = () => {
+            return "Hello World!";
+        }
+
+        document.getElementById("demo").innerHTML = hello();
+    </script>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>     regular function
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Function</h1>
+    <p>This demonstrates a regular function, NOT an arrow function.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        hello = function () {
+            return "Hello World!";
+        }
+
+        document.getElementById("demo").innerHTML = hello();
+    </script>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>     class inhritance
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Car {
+            constructor(name) {
+                this.brand = name;
+            }
+
+            present() {
+                return 'I have a ' + this.brand;
+            }
+        }
+
+        class Model extends Car {
+            constructor(name, mod) {
+                super(name);
+                this.mod = mod;
+            }
+
+            show() {
+                return this.present() + ', it is a ' + this.mod;
+            }
+        }
+
+        const mycar = new Model("Ford", "Mustang");
+
+        document.write(mycar.show());
+    </script>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>     class + method
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Car {
+            constructor(name) {
+                this.brand = name;
+            }
+
+            present() {
+                return 'I hava a ' + this.brand;
+            }
+        }
+
+        const mycar = new Car("Ford");
+
+        document.write(mycar.present());
+    </script>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>     class
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Car {
+            constructor(name) {
+                this.brand = name;
+            }
+        }
+
+        const mycar = new Car("Ford");
+
+        document.write(mycar.brand);
+    </script>
+</body>
+</html -->
