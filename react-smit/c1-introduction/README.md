@@ -30,3 +30,6 @@ index.css  => jo apka global css hota h
 main.jsx  => jis mai apka dom render hota h
 
 files ka naam change kar sakh te hien
+
+
+props (property)

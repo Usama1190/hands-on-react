@@ -1,0 +1,48 @@
+.heading {
+    background-color: red;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*
+
+.heading {
+    background-color: red;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-wrapper button img {
+    width: 20px;
+    height: 20px;
+}
+
+*/
+
+/*
+
+.heading {
+    background-color: red;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+*/
+
+
+/* h1 {
+    background-color: red;
+    padding: 30px;
+    color: white;
+} */
