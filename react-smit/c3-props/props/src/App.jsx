@@ -1,6 +1,39 @@
+import "./App.css";
+import Button from "./components/button/Button";
+import ProductCard from "./components/productCard/ProductCard";
+import productData from "./utils/constant/productData";
+import { AllImages } from "./utils/constant/Images";
+
+const App = () => {
+
+  return (
+    <div>
+      <Button icon='abc' title='Click me' />
+      <Button icon='abc' title='See me' />
+      <Button icon='abc' title='Show me' />
+
+      <h1>Porducts Cards</h1>
+      <img src={AllImages.mainImg} alt="images" />
+      <div className="product-wrapper">
+        {productData.map((item, index) => {
+          return <ProductCard key={index} data={item} />;
+        })}
+      </div>
+    </div>
+  );
+};
+
+export default App;
+
+
+/*
+
+
 import ProductCard from "./components/productCard/ProductCard";
 import productData from "./utils/constant/productData";
 import "./App.css";
+// import mainImg from '/assets/images/student-with-laptop1.jpeg';
+import { AllImages } from "./utils/constant/Images";
 
 const App = () => {
   // console.log(productData);
@@ -8,24 +41,67 @@ const App = () => {
   return (
     <div>
       <h1>Porducts Cards</h1>
+      <img src={AllImages.mainImg} alt="images" />
       <div className="product-wrapper">
         {productData.map((item, index) => {
           return <ProductCard key={index} data={item} />;
         })}
       </div>
-      <ProductCard />
+      {/* <ProductCard /> }
       {/* <ul>
         {listData.map((item, index) => {
           console.log(item);
 
           return <li key={index}>{item.listTitle}</li>;
         })}
-      </ul> */}
+      </ul> }
     </div>
   );
 };
 
 export default App;
+
+*/
+
+
+
+
+
+
+/*
+
+import ProductCard from "./components/productCard/ProductCard";
+import productData from "./utils/constant/productData";
+import "./App.css";
+import mainImg from '/assets/images/student-with-laptop1.jpeg';
+
+const App = () => {
+  // console.log(productData);
+
+  return (
+    <div>
+      <h1>Porducts Cards</h1>
+      <img src={mainImg} alt="" />
+      <div className="product-wrapper">
+        {productData.map((item, index) => {
+          return <ProductCard key={index} data={item} />;
+        })}
+      </div>
+      {/* <ProductCard /> }
+      {/* <ul>
+        {listData.map((item, index) => {
+          console.log(item);
+
+          return <li key={index}>{item.listTitle}</li>;
+        })}
+      </ul> }
+    </div>
+  );
+};
+
+export default App;
+
+*/
 
 /*
 
