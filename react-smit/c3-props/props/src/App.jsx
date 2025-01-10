@@ -1,3 +1,34 @@
+import ProductCard from "./components/productCard/ProductCard";
+import productData from "./utils/constant/productData";
+import "./App.css";
+
+const App = () => {
+  // console.log(productData);
+
+  return (
+    <div>
+      <h1>Porducts Cards</h1>
+      <div className="product-wrapper">
+        {productData.map((item, index) => {
+          return <ProductCard key={index} data={item} />;
+        })}
+      </div>
+      <ProductCard />
+      {/* <ul>
+        {listData.map((item, index) => {
+          console.log(item);
+
+          return <li key={index}>{item.listTitle}</li>;
+        })}
+      </ul> */}
+    </div>
+  );
+};
+
+export default App;
+
+/*
+
 const App = () => {
   const listData = [
     {
@@ -32,6 +63,8 @@ const App = () => {
 };
 
 export default App;
+
+*/
 
 /*
 

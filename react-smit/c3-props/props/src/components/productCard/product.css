@@ -1,0 +1,9 @@
+.product-wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+.img {
+    width: 100px;
+    height: 100px;
+}
