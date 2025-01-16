@@ -1,0 +1,6 @@
+.card-wrapper {
+    display: flex;
+    gap: 20px;
+    background-color: aqua;
+    padding: 10px;
+}
