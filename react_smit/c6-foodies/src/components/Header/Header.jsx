@@ -1,14 +1,14 @@
 import Button from '../common/Button/Button';
-import styles from './Header.module.css';
+import './Header.css';
 
 const Header = () => {
   return (
-    <div className={styles.hdw}>
-      <div className={styles.hdlg}>
+    <div className='header-wrapper'>
+      <div className='logo-wrapper'>
         <h1>Foodies</h1>
       </div>
 
-      <div className={styles.hdnb}>
+      <div className='navbar'>
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
@@ -17,7 +17,7 @@ const Header = () => {
         </ul>
       </div>
 
-      <div className={styles.hdbtw}>
+      <div className='btn-wrapper'>
         <Button text='Order Now' />
       </div>
     </div>

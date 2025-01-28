@@ -1,4 +1,4 @@
-.bnw {
+.banner-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -6,8 +6,12 @@
     margin: 30px auto;
 }
 
-.bniw img {
-    width: 400px;
-    height: 400px;
+.img-wrapper img {
+    width: 500px;
+    height: 500px;
     object-fit: contain;
+}
+
+.rotateImg {
+    flex-direction: row-reverse;
 }
