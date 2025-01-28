@@ -11,4 +11,4 @@ Currently, two official plugins are available:
 
 This is clone project of this website https://react-delivery-landing-page.vercel.app/ which is given by Sir Sadiq
 
-Command line : npm create vite@latest , npm i vite
+Command line : npm create vite@latest , npm i vite , flaticon
