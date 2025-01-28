@@ -1,16 +1,10 @@
 
-const Card = ({data}) => {
-  console.log(data);
-  
+const Card = () => {
   return (
     <div>
-      <h1>{data.cardTitle}</h1>
-      <p>{data.price}</p>
-      <p>{data.description}</p>
-      {
-        data.isButton ? <button>view data</button> : null
-      }
-      
+      <h1>Card 1</h1>
+      <p>Card price 1</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis reprehenderit eligendi, quae delectus magni tempora fugit veritatis, accusantium eius adipisci nam dolores quos ea, aspernatur quaerat. Error esse maxime non?</p>
     </div>
   )
 }
