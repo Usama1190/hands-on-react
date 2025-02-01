@@ -1,4 +1,4 @@
-import styles from './Button.module.css';
+import './Button.css';
 import ButtonImages from '../../../utils/constant/images';
 
 // Condition Rendering

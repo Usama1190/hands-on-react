@@ -1,19 +1,19 @@
 import Button from '../common/Button/Button'
-import styles from './Banner.module.css'
+import './Banner.css'
 
-const Banner = ({ data }) => {
+const Banner = ({ isrotate, data }) => {
   // console.log(data);
 
   const { title, subTitle, imgUrl, buttonText} = data;
   
   return (
-    <div className={styles.bnw}>
-      <div className={styles.bntw}>
+    <div className={`banner-wrapper ${isrotate && 'rotateImg'}`}>
+      <div className='text-wrapper'>
         <h1>{ title }</h1>
         <p>{ subTitle }</p>
-        <Button text={ buttonText } />
+        { buttonText ? <Button text={ buttonText } /> : null}
       </div>
-      <div className={styles.bniw}>
+      <div className='img-wrapper'>
         <img src={ imgUrl } alt="banner image" />
       </div>
     </div>
