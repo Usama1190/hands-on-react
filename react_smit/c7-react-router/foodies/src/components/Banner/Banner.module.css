@@ -1,0 +1,13 @@
+.bnw {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 968px;
+    margin: 30px auto;
+}
+
+.bniw img {
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+}

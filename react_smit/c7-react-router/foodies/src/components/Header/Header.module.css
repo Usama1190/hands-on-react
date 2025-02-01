@@ -1,0 +1,13 @@
+.hdw {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 968px;
+    margin: 30px auto;
+}
+
+.hdw ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
