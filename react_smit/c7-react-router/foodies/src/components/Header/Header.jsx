@@ -1,27 +1,38 @@
-import Button from '../common/Button/Button';
-import './Header.css';
+import { NavLink } from "react-router-dom";
+import Button from "../common/Button/Button";
+import "./Header.css";
 
 const Header = () => {
   return (
-    <div className='header-wrapper'>
-      <div className='logo-wrapper'>
+    <div className="header-wrapper">
+      <div className="logo-wrapper">
         <h1>Foodies</h1>
       </div>
 
-      <div className='navbar'>
+      <div className="navbar">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+          <li>
+            <NavLink to="/">Home</NavLink>
+          </li>
+          <li>
+            <NavLink to="/about">About</NavLink>
+          </li>
+          <li>
+            <NavLink to="/services">Services</NavLink>
+          </li>
+          <li>
+            <NavLink to="/contact-us">Contact Us</NavLink>
+          </li>
         </ul>
       </div>
 
-      <div className='btn-wrapper'>
-        <Button text='Order Now' />
+      <div className="btn-wrapper">
+        <NavLink to={"/order-now"}>
+          <Button text="Order Now" />
+        </NavLink>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

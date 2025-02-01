@@ -9,7 +9,6 @@ import Contact from "../components/Contact/Contact";
 const Home = () => {
   return (
     <div>
-      <Header />
       <Banner data={BannerText1} />
       <Banner isrotate data={BannerText2} />
       <Banner data={BannerText3} />
