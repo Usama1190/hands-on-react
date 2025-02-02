@@ -19,7 +19,3 @@ ctrl + shift + v (restart vs code)
 git command
 
 git init
-
-git add .
-
-git status
