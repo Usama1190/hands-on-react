@@ -8,7 +8,7 @@ const MoviesData = [
     rating: 9.3,
     actors: ["Tim Robbins", "Morgan Freeman", "Bob Gunton"],
     duration: "2h 22m",
-    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkb4atRGTrdWBZe798OK0TKPwKt2XhInvthg&s',
+    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyXVtBNl5AmnsIC2t6Rb8KbRwp2uGnleKOsQ&s',
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const MoviesData = [
     rating: 9.2,
     actors: ["Marlon Brando", "Al Pacino", "James Caan"],
     duration: "2h 55m",
-    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkb4atRGTrdWBZe798OK0TKPwKt2XhInvthg&s'
+    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyXVtBNl5AmnsIC2t6Rb8KbRwp2uGnleKOsQ&s'
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const MoviesData = [
     rating: 9.0,
     actors: ["Christian Bale", "Heath Ledger", "Aaron Eckhart"],
     duration: "2h 32m",
-    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkb4atRGTrdWBZe798OK0TKPwKt2XhInvthg&s'
+    img: '/assets/imgs/abcd.jpeg'
   },
   {
     id: 4,
@@ -41,6 +41,7 @@ const MoviesData = [
     rating: 8.9,
     actors: ["John Travolta", "Uma Thurman", "Samuel L. Jackson"],
     duration: "2h 34m",
+    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwsm7R59dFD3X1IfhBrEXtsWVxo7B8fTZjWQ&s',
   },
   {
     id: 5,
@@ -51,6 +52,7 @@ const MoviesData = [
     rating: 8.8,
     actors: ["Tom Hanks", "Robin Wright", "Gary Sinise"],
     duration: "2h 22m",
+    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwsm7R59dFD3X1IfhBrEXtsWVxo7B8fTZjWQ&s',
   },
   {
     id: 6,
@@ -61,6 +63,7 @@ const MoviesData = [
     rating: 8.8,
     actors: ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Elliot Page"],
     duration: "2h 28m",
+    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwsm7R59dFD3X1IfhBrEXtsWVxo7B8fTZjWQ&s',
   },
   {
     id: 7,

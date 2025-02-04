@@ -13,10 +13,14 @@ const MovieDetail = () => {
 
   console.log(singleData);
 
-  const { img } = singleData;
+  const { img, title, year } = singleData;
 
   return (
     <div style={{backgroundImage: `url(${img})`}} className='bgImg'>
+      <div className='detail-card'>
+      <h4>Movie Title: {title}</h4>
+      <p>Year {year}</p>
+      </div>
     </div>
   )
 }
