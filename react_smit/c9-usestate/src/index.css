@@ -13,3 +13,9 @@ body {
   max-width: 500px;
   margin: 0 auto;
 }
+
+.modal {
+  max-width: 400px;
+  background-color: red;
+  height: auto;
+}
