@@ -18,3 +18,9 @@ state lifting up
 
 A component share state with another component
 
+figma design for smoothies 
+
+https://www.figma.com/design/LqJTgDRNvC6oaVYSLcuK5z/Smoothies-%2F-Beverage-Landing-Page-(Community)?node-id=0-106&t=Ouc22G3FgPDUA85H-0
+
+
+assignment smoothies product page or detail page

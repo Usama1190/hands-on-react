@@ -1,3 +1,30 @@
+// import Modal from './components/Modal'
+// import {useState} from 'react'
+// import Product from './components/Product'
+// import Blogs from './components/Blogs'
+import JuiceProduct from './components/JuiceProduct'
+const App = () => {
+  // const [modal, setModal] = useState(false)
+  return (
+    <div>
+      {/* <button onClick={() => setModal(true)}>Main Modal</button> */}
+
+      {/* Satet Lifting up */}
+      {/* <Modal modal={modal} setModal={setModal} />
+      <Product />
+      <Blogs /> */}
+      <JuiceProduct />
+    </div>
+  )
+}
+
+export default App
+
+
+
+
+/*
+
 import Modal from './components/Modal'
 import {useState} from 'react'
 import Product from './components/Product'
@@ -8,7 +35,7 @@ const App = () => {
     <div>
       <button onClick={() => setModal(true)}>Main Modal</button>
 
-      {/* Satet Lifting up */}
+      { Satet Lifting up }
       <Modal modal={modal} setModal={setModal} />
       <Product />
       <Blogs />
@@ -20,9 +47,7 @@ export default App
 
 
 
-
-
-
+*/
 
 
 
