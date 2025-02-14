@@ -7,7 +7,8 @@ const Crud = () => {
   const [isLoadings, isSetLoadings] = useState(false)
   const [filterProduct, setFilterProduct] = useState([]);
   const [categorys, setCategorys] = useState([]);
-  const [search, setSearch] = useState('')
+  const [search, setSearch] = useState('');
+  const [isFound, setIsFound] = useState(false);
 
   const getData = async () => {
     isSetLoadings(true)
@@ -34,7 +35,7 @@ const Crud = () => {
   }
 
   const handleValue = (cat) => {
-    if(cat == 'All') {
+    if(cat === 'All') {
       setFilterProduct(products)
     }
     // console.log(cat);
@@ -45,15 +46,32 @@ const Crud = () => {
   }
 
   const handleSearch = () => {
-    console.log(search);
-    
+    // console.log(search);
+
+    const filterSearch = filterProduct.filter((item) => item.title.toLowerCase().includes(search.toLowerCase()));
+    // console.log(filterSearch);
+
+    if(filterSearch.length === 0) {
+      setIsFound(true)
+    }else {
+      setFilterProduct(filterSearch)
+      setIsFound(false)
+
+    }
+
+  }
+
+  const handleEnterSearch = (e) => {
+    if(e.key === 'Enter') {
+      handleSearch();
+    }
   }
 
   useEffect(() => {
     getData();    
   }, [])
 
-  console.log(isLoadings);
+  // console.log(isLoadings);
   
 
   return (
@@ -61,7 +79,7 @@ const Crud = () => {
       { isLoadings ? <div className="loader"></div> : 
       <>
       <div>
-        <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} />
+        <input onKeyDown={handleEnterSearch} type="text" value={search} onChange={(e) => setSearch(e.target.value)} />
       <select name="" id="" onChange={(e) => handleValue(e.target.value)}>
         <option value="All">All</option>
         {
@@ -74,18 +92,25 @@ const Crud = () => {
       </select>
       <button onClick={handleSearch}>Search</button>
       </div>
-      {
-        filterProduct.map((item) => {
-          const { title, image} = item;
 
-          return (
-            <div key={item.id}>
-              <img src={image} alt="image" />
-              <p>{title}</p>
-            </div>
-          )
-        })
-      }
+        {
+          isFound ? <p>No data found</p> : 
+        
+            <>
+            {
+              filterProduct.map((item) => {
+                const { title, image} = item;
+
+                return (
+                  <div key={item.id}>
+                    <img src={image} alt="image" />
+                    <p>{title}</p>
+                  </div>
+                )
+              })
+            }
+            </>
+          }
       </>
     }
     </div>
