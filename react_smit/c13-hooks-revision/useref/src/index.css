@@ -1,0 +1,28 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-wrapper {
+  display: flex;
+}
+
+.sidebar {
+  width: 30%;
+  background-color: blue;
+  height: 100vh;
+}
+
+.content {
+  width: 70%;
+  background-color: red;
+  height: 100vh;
+}
+
+.header {
+  width: 100%;
+  height: 40px;
+  margin: 5px;
+  background-color: white;
+}
