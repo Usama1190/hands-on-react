@@ -1,13 +1,16 @@
 import { useContext } from "react"
 import { AuthContext } from "../context/userAuth"
+import { ProductContext } from "../context/ProductContext";
 
 const Sidebar = () => {
     const name = useContext(AuthContext);
     
+    const data = useContext(ProductContext);
+    console.log(data);
+    
   return (
     <div className="sidebar">
-      Sidebar
-      <h3>{name}</h3>
+      <img src={name.logo} alt="img" />
     </div>
   )
 }

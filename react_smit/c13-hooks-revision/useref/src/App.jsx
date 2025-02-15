@@ -1,22 +1,20 @@
-import Dashboard from "./auth/Dashboard"
-import UserAuth from "./context/userAuth"
+import Dashboard from "./auth/Dashboard";
+import AllProducts from "./context/ProductContext";
+import UserAuth from "./context/userAuth";
 
 const App = () => {
-
   return (
     <div>
       <UserAuth>
-      <Dashboard />
+        <AllProducts>
+          <Dashboard />
+        </AllProducts>
       </UserAuth>
     </div>
-  )
-}
+  );
+};
 
-export default App
-
-
-
-
+export default App;
 
 /*
 
@@ -34,11 +32,6 @@ const App = () => {
 export default App
 
 */
-
-
-
-
-
 
 /*
 

@@ -20,3 +20,7 @@ prop drilling
 react hook useContext (small application)
 
 redux (big application) , juster
+
+assignment 
+
+useContext using make theme changer 
