@@ -1,1 +1,0 @@
-props is the porperties of the component
